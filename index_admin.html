@@ -35,7 +35,7 @@
 
         <div class="wrapper">
             <!-- header -->
-            <header class="header-top" header-theme="green">
+            <header class="header-top" header-theme="light">
                 <div class="container-fluid">
                     <div class="d-flex justify-content-between">
                         <div class="top-menu d-flex align-items-center">
@@ -54,7 +54,7 @@
                             <div class="dropdown">
                                 <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar" src="img/user.jpg" alt=""></a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                                    <a class="dropdown-item" href="pages/login.html"><i class="ik ik-power dropdown-icon"></i> Logout</a>
+                                    <a class="dropdown-item" href="login.html"><i class="ik ik-power dropdown-icon"></i> Logout</a>
                                 </div>
                             </div>
 
@@ -79,20 +79,20 @@
                     <div class="sidebar-content">
                         <div class="nav-container">
                             <nav id="main-menu-navigation" class="navigation-main">
-                                <div class="nav-lavel">Navigasi</div>
+                                <div class="nav-lavel">Navigation</div>
                                 <div class="nav-item active">
                                     <a href="index.html"><i class="ik ik-bar-chart-2"></i><span>Dashboard</span></a>
                                 </div>
                                 <div class="nav-item">
-                                    <a href="main.html"><i class="ik ik-menu"></i><span>Pembayaran</span></a>
+                                    <a href="pages/navbar.html"><i class="ik ik-menu"></i><span>Navigation</span> <span class="badge badge-success">New</span></a>
                                 </div>
-                                <div class="nav-lavel"></div>
                                 <div class="nav-item has-sub">
-                                    <a href="#"><i class="ik ik-user"></i><span>Daftar Kelas</span></a>
+                                    <a href="javascript:void(0)"><i class="ik ik-layers"></i><span>Widgets</span> <span class="badge badge-danger">150+</span></a>
                                     <div class="submenu-content">
-                                        <a href="kelas.html" class="menu-item">Kelas X</a>
-                                        <a href="kelas1.html" class="menu-item">Kelas XI</a>
-                                        <a href="kelas2.html" class="menu-item">Kelas XII</a>
+                                        <a href="pages/widgets.html" class="menu-item">Basic</a>
+                                        <a href="pages/widget-statistic.html" class="menu-item">Statistic</a>
+                                        <a href="pages/widget-data.html" class="menu-item">Data</a>
+                                        <a href="pages/widget-chart.html" class="menu-item">Chart Widget</a>
                                     </div>
                                 </div>
                                 <div class="nav-lavel">account</div>
@@ -114,7 +114,7 @@
                     <div class="container-fluid">
                         <div class="row clearfix">
                             <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="widget bg-danger">
+                                <div class="widget">
                                     <div class="widget-body">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="state">
@@ -127,10 +127,13 @@
                                         </div>
                                         <small class="text-small mt-10 d-block">6% higher than last month</small>
                                     </div>
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="widget bg-success">
+                                <div class="widget">
                                     <div class="widget-body">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="state">
@@ -143,10 +146,13 @@
                                         </div>
                                         <small class="text-small mt-10 d-block">61% higher than last month</small>
                                     </div>
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="widget bg-warning">
+                                <div class="widget">
                                     <div class="widget-body">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="state">
@@ -159,10 +165,13 @@
                                         </div>
                                         <small class="text-small mt-10 d-block">Total Events</small>
                                     </div>
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="widget bg-primary">
+                                <div class="widget">
                                     <div class="widget-body">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="state">
@@ -174,6 +183,9 @@
                                             </div>
                                         </div>
                                         <small class="text-small mt-10 d-block">Total Comments</small>
+                                    </div>
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -222,7 +234,8 @@
                                                         <label class="badge badge-primary">Sketch</label>
                                                         <label class="badge badge-primary">Ui</label>
                                                     </td>
-                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><!--<a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a>--></td>
+-->
+                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -242,7 +255,8 @@
                                                         <label class="badge badge-danger">Ui</label>
                                                         <label class="badge badge-danger">php</label>
                                                     </td>
-                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><!--<a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a>--></td>
+-->
+                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -261,7 +275,8 @@
                                                         <label class="badge badge-danger">Sketch</label>
                                                         <label class="badge badge-primary">Ui</label>
                                                     </td>
-                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><!--<a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a>--></td>
+-->
+                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -281,7 +296,8 @@
                                                         <label class="badge badge-success">Ui</label>
                                                         <label class="badge badge-warning">php</label>
                                                     </td>
-                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><!--<a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a>--></td>
+-->
+                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -302,7 +318,7 @@
                                                     </td>
 -->
 
-                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><!--<a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a>--></td>
+                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -321,7 +337,8 @@
                                                         <label class="badge badge-danger">Sketch</label>
                                                         <label class="badge badge-primary">Ui</label>
                                                     </td>
-                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a>--></td>
+-->
+                                                    <td><a href="#!"><i class="ik ik-edit f-16 mr-15 text-green"></i></a><a href="#!"><i class="ik ik-trash-2 f-16 text-red"></i></a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
