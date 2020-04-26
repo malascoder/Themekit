@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Sign Up | ThemeKit - Admin Template</title>
+        <title>Register</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,10 +40,9 @@
                                 <a href="../index.html"><img src="../src/img/brand.svg" alt=""></a>
                             </div>
                             <h3>Daftarkan pengguna baru</h3>
-                            <p>Diisi oleh admin!</p>
                             <form action="../index.html">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email" required="">
+                                    <input type="text" class="form-control" placeholder="Username" required="">
                                     <i class="ik ik-user"></i>
                                 </div>
                                 <div class="form-group">
@@ -54,13 +53,30 @@
                                     <input type="password" class="form-control" placeholder="Confirm Password" required="">
                                     <i class="ik ik-eye-off"></i>
                                 </div>
+                                <div class="form-radio center">
+                                    <div class="radio radiofill radio-danger radio-inline">
+                                    <label>
+                                        <input type="radio" name="radio" id="1">
+                                        <i class="helper"></i>Admin
+                                    </label>
+                                    </div>
+                                    <div class="radio radiofill radio-primary radio-inline">
+                                        <label>
+                                            <input type="radio" name="radio" id="2">
+                                            <i class="helper"></i>Petugas
+                                        </label>
+                                    </div>
+                                    <div class="radio radiofill radio-success radio-inline">
+                                        <label>
+                                            <input type="radio" name="radio" id="3" checked="checked">
+                                            <i class="helper"></i>Siswa
+                                        </label>
+                                    </div>
+                                </div>
                                 <div class="sign-btn text-center">
                                     <button class="btn btn-theme">Create Account</button>
                                 </div>
                             </form>
-                            <div class="register">
-                                <p>Already have an account? <a href="login.html">Sign In</a></p>
-                            </div>
                         </div>
                     </div>
                 </div>
